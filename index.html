@@ -1,6 +1,237 @@
-<% var title = "TOP"; var description = "トップのdescription"; %>
-<% include src/ejs/template/_head %>
-<% include src/ejs/template/_header %>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="トップのdescription" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<!--facebook用-->
+<meta property="og:title" content="TOP" />
+<meta property="og:description" content="トップのdescription" />
+<meta property="og:url" content="" />
+<meta property="og:image" content="" /><!--絶対パスで記述-->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="TOP" />
+<meta property="og:locale" content="ja_JP" />
+<!--twitter用-->
+<meta name="twitter:card" content="summary_large_image" /><!-- summary summary_large_image photo gallery appから選ぶ -->
+<!-- <meta name="twitter:site" content="" /> --><!--twitterがあれば記述-->
+<meta name="twitter:title" content="TOP" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:description" content="トップのdescription" />
+<meta name="twitter:image" content="" /><!--絶対パスで記述-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js"></script>
+
+
+<title>TOP</title>
+<link href="assets/stylesheets/bundle.css" rel="stylesheet"></head>
+<body>
+<div class="l-wrap">
+
+<header class="l-header">
+  <div class="l-header__menu">
+    <div class="p-humburger__box">
+      <span class="p-humburger__toggle">
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+    <a class="l-header__iconLink" href="#">
+      <img class="l-header__icon" src="assets/images/language.png" alt="language">
+    </a>
+    <a class="l-header__iconLink" href="#">
+      <img class="l-header__icon" src="assets/images/login.png" alt="login">
+    </a>
+  </div>
+  <div class="l-header__name">
+    <a class="l-header__nameLink" href="#">坂本リゾート</a>
+  </div>
+  <div class="l-header__reservation">
+    <div class="l-header__price">
+      <p class="l-header__priceTxt1">1泊1名</p>
+      <p class="l-header__priceTxt2">¥8,955〜</p>
+    </div>
+    <a href="#" class="l-header__serch">
+      <p class="l-header__serchTxt1">空室検索</p>
+      <p class="l-header__serchTxt2">当サイトが最もお得</p>
+    </a>
+    <a href="#" class="l-header__flight">
+      <img class="l-header__flightImg" src="assets/images/plain.png" alt="飛行機">
+      <p class="l-header__flightTxt">＋航空券</p>
+    </a>
+  </div>
+</header>
+
+<header class="l-headerSp">
+  <div class="l-headerSp__inner">
+    <div class="l-header__menu">
+      <div class="p-humburger__box">
+        <span class="p-humburger__toggle">
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+      <div class="l-header__name">
+        <a class="l-header__nameLink" href="#">坂本リゾート</a>
+      </div>
+    </div>
+    <div>
+      <a class="l-header__iconLink" href="#">
+        <img class="l-header__icon" src="assets/images/language.png" alt="language">
+      </a>
+      <a class="l-header__iconLink" href="#">
+        <img class="l-header__icon" src="assets/images/login.png" alt="login">
+      </a>
+    </div>
+  </div>
+  <div class="l-headerSp__scroll">
+    <div class="l-headerSp__bottom">
+      <div class="l-header__price">
+        <p class="l-header__priceTxt1">1泊1名</p>
+        <p class="l-header__priceTxt2">¥8,955〜</p>
+      </div>
+      <div class="l-header__reservation">
+        <a href="#" class="l-header__serch">
+          <p class="l-header__serchTxt1">空室検索</p>
+          <p class="l-header__serchTxt2">当サイトが最もお得</p>
+        </a>
+        <a href="#" class="l-header__flight">
+          <img class="l-header__flightImg" src="assets/images/plain.png" alt="飛行機">
+          <p class="l-header__flightTxt">＋航空券</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="l-header__serch l-header__serchSp">
+    <p class="l-header__serchTxt1">空室検索</p>
+    <p class="l-header__serchTxt2">当サイトが最もお得</p>
+  </a>
+</header>
+
+<div class="p-humburger">
+  <div class="p-humburger__inner">
+    <ul class="p-humburger__nav">
+      
+      
+        <li class="p-humburger__navList">
+          <a class="p-humburger__navLink" href="#recommend">
+            <p class="p-humburger__navTxt">ここがおすすめ</p>
+            <img class="p-humburger__navArrow" src="assets/images/serch.png" alt="">
+          </a>
+        </li>
+      
+        <li class="p-humburger__navList">
+          <a class="p-humburger__navLink" href="#stay">
+            <p class="p-humburger__navTxt">過ごしかた</p>
+            <img class="p-humburger__navArrow" src="assets/images/serch.png" alt="">
+          </a>
+        </li>
+      
+        <li class="p-humburger__navList">
+          <a class="p-humburger__navLink" href="#actibity">
+            <p class="p-humburger__navTxt">アクティビティ</p>
+            <img class="p-humburger__navArrow" src="assets/images/serch.png" alt="">
+          </a>
+        </li>
+      
+        <li class="p-humburger__navList">
+          <a class="p-humburger__navLink" href="#meal">
+            <p class="p-humburger__navTxt">お食事</p>
+            <img class="p-humburger__navArrow" src="assets/images/serch.png" alt="">
+          </a>
+        </li>
+      
+        <li class="p-humburger__navList">
+          <a class="p-humburger__navLink" href="#room">
+            <p class="p-humburger__navTxt">ゲストルーム</p>
+            <img class="p-humburger__navArrow" src="assets/images/serch.png" alt="">
+          </a>
+        </li>
+      
+        <li class="p-humburger__navList">
+          <a class="p-humburger__navLink" href="#around">
+            <p class="p-humburger__navTxt">周辺の見どころ</p>
+            <img class="p-humburger__navArrow" src="assets/images/serch.png" alt="">
+          </a>
+        </li>
+      
+        <li class="p-humburger__navList">
+          <a class="p-humburger__navLink" href="#photo">
+            <p class="p-humburger__navTxt">フォトギャラリー</p>
+            <img class="p-humburger__navArrow" src="assets/images/serch.png" alt="">
+          </a>
+        </li>
+      
+        <li class="p-humburger__navList">
+          <a class="p-humburger__navLink" href="#detail">
+            <p class="p-humburger__navTxt">ホテル詳細</p>
+            <img class="p-humburger__navArrow" src="assets/images/serch.png" alt="">
+          </a>
+        </li>
+      
+        <li class="p-humburger__navList">
+          <a class="p-humburger__navLink" href="#access">
+            <p class="p-humburger__navTxt">アクセス</p>
+            <img class="p-humburger__navArrow" src="assets/images/serch.png" alt="">
+          </a>
+        </li>
+      
+    </ul>
+    <div class="p-humburger__detail">
+      <p class="p-humburger__name">坂本リゾート  坂本屋</p>
+      <div class="p-humburger__flex">
+        <img class="p-humburger__img" src="assets/images/map2.png" alt="">
+        <a class="p-humburger__txt1" href="#">123-4567 青森県三沢市坂本1234</a>
+      </div>
+      <div class="p-humburger__flex">
+        <img class="p-humburger__img" src="assets/images/bus.png" alt="">
+        <div>
+          <p class="p-humburger__txt2">坂本駅からホテルまで徒歩15分。<br>坂本駅・坂本空港からは無料送迎バスをご利用いただけます。</p>
+          <a class="p-humburger__link" href="#">宿泊者専用バスのご案内（事前予約制）</a>
+        </div>
+      </div>
+      <div class="p-humburger__flex">
+        <img class="p-humburger__img" src="assets/images/mail.png" alt="">
+        <p class="p-humburger__txt4">info@sakamotoya.jp</p>
+      </div>
+      <div class="p-humburger__flex">
+        <img class="p-humburger__img" src="assets/images/insta.png" alt="">
+        <a class="p-humburger__txt4" href="https://www.instagram.com/">@sakamotoresorts_sakamotoya</a>    </div>
+    </div>
+    <div class="p-humburger__reservation">
+      <p class="p-humburger__txt3">予約</p>
+      <p class="p-humburger__call1">0570-123-456 <span>(9:30 AM - 6:00 PM)</span></p>
+      <p class="p-humburger__txt3">海外から（英語）</p>
+      <p class="p-humburger__call2">+81-12-3456-7890 <span>(10:00 AM - 6:00 PM)</span></p>
+      <a class="p-humburger__question" href="#">坂本リゾート  よくある質問</a>
+    </div>
+    <div class="p-humburger__example">
+      <div class="p-humburger__flex">
+        <img class="p-humburger__arrow" src="assets/images/arrow2.png" alt="">
+        <a class="p-humburger__exampleTxt" href="#">宿泊ギフト券</a>
+      </div>
+      <div class="p-humburger__flex">
+        <img class="p-humburger__arrow" src="assets/images/arrow2.png" alt="">
+        <a class="p-humburger__exampleTxt" href="#">坂本リゾート公式サイト</a>
+      </div>
+      <div class="p-humburger__flex">
+        <img class="p-humburger__arrow" src="assets/images/arrow2.png" alt="">
+        <a class="p-humburger__exampleTxt" href="#">採用情報</a>
+      </div>
+      <div class="p-humburger__flex">
+        <img class="p-humburger__arrow" src="assets/images/arrow2.png" alt="">
+        <a class="p-humburger__exampleTxt" href="#">投資をご検討中の皆さまへ</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="main">
 <div id="overlay" class="overlay"></div>
@@ -781,4 +1012,32 @@
   </div>
 </div>
 
-<% include src/ejs/template/_footer %>
+<div class="l-footer">
+  <div class="l-footer__top">
+    <p class="l-footer__logo">坂本屋</p>
+    <div class="l-footer__txtBox">
+      <p class="l-footer__txt1">坂本リゾート  坂本屋</p>
+      <p class="l-footer__txt2">123-4567 青森県三沢市坂本1234</p>
+    </div>
+  </div>
+  <div class="l-footer__main">
+    <a class="l-footer__link" href="#">坂本リゾート</a>
+    <div class="l-footer__list">
+      <a href="#"><img class="l-footer__img" src="assets/images/footer1.png" alt=""></a>
+      <a href="#"><img class="l-footer__img" src="assets/images/footer2.png" alt=""></a>
+      <a href="#"><img class="l-footer__img" src="assets/images/footer3.png" alt=""></a>
+      <a href="#"><img class="l-footer__img" src="assets/images/footer4.png" alt=""></a>
+      <a href="#"><img class="l-footer__img" src="assets/images/footer5.png" alt=""></a>
+      <a href="#"><img class="l-footer__img" src="assets/images/footer6.png" alt=""></a>
+    </div>
+    <a class="l-footer__serch" href="#">→ 坂本リゾート空室検索</a>
+    <p class="l-footer__rights">©︎ Sakamoto Resorts Inc.</p>
+  </div>
+</div>
+
+</div>  <!-- main -->
+
+
+</div><!-- l-wrap -->
+<script type="text/javascript" src="assets/javascripts/bundle.js"></script></body>
+</html>
