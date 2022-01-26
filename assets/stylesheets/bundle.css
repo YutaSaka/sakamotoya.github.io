@@ -261,7 +261,7 @@ a {
   background-color: #03b7db;
   margin-left: 10px;
   text-align: center;
-  padding: 5px 10px
+  padding: 5px 15px
 }
 
 .l-header__serchTxt1 {
@@ -371,6 +371,10 @@ a {
   .appear {
     display: block
   }
+}
+
+a:hover {
+  opacity: .7
 }
 
 .p-about {
@@ -1411,7 +1415,34 @@ a {
     display: -ms-flexbox;
     display: flex
   }
-  .p-modal__busInner, .p-modal__cafeInner, .p-modal__onsenInner, .p-modal__restaurantInner, .p-modal__spaInner {
+  .p-modal__busItem {
+    margin-left: 0
+  }
+  .p-modal__restaurantInner {
+    display: block
+  }
+  .p-modal__restaurantItem {
+    margin-left: 0
+  }
+  .p-modal__cafeInner {
+    display: block
+  }
+  .p-modal__cafeItem {
+    margin-left: 0
+  }
+  .p-modal__spaInner {
+    display: block
+  }
+  .p-modal__spaItem {
+    margin-left: 0
+  }
+  .p-modal__onsenInner {
+    display: block
+  }
+  .p-modal__onsenItem {
+    margin-left: 0
+  }
+  .p-modal__busInner {
     display: block
   }
 }
