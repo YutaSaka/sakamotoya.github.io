@@ -1379,6 +1379,13 @@ a:hover {
 }
 
 @media screen and (max-width:768px) {
+  .p-modal__bus, .p-modal__cafe, .p-modal__onsen, .p-modal__restaurant, .p-modal__spa {
+    width: 100%
+  }
+  .p-modal__img {
+    width: 180px;
+    height: auto
+  }
   .p-modal__link {
     position: relative
   }
