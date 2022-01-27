@@ -279,13 +279,13 @@ a {
   margin-right: 10px;
   margin-left: 3px;
   text-align: center;
-  padding-right: 10px;
-  padding-left: 10px
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 2px
 }
 
 .l-header__flightImg {
-  width: 20px;
-  padding-top: 5px
+  width: 16px
 }
 
 .l-header__flightTxt {
