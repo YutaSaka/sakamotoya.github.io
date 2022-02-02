@@ -817,8 +817,6 @@ a:hover {
 
 .p-hero__topTxt1 {
   top: 67%;
-  font-size: 50px;
-  color: #4a1dff
 }
 
 .p-hero__topTxt1, .p-hero__topTxt2 {
@@ -835,9 +833,6 @@ a:hover {
 }
 
 @media screen and (max-width:768px) {
-  .p-hero__topTxt1 {
-    font-size: clamp(20px, 8vw, 50px)
-  }
   .p-hero__topTxt2 {
     font-size: clamp(4px, 6vw, 15px)
   }
