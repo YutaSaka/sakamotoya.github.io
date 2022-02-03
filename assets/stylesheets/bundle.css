@@ -1114,6 +1114,7 @@ a:hover {
   background-position: center;
   background-attachment: fixed;
   background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .p-introduce__txtBox {
